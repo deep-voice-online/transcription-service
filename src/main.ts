@@ -27,6 +27,9 @@ async function bootstrap() {
           'amqp://guest:guest@localhost:5672',
         ),
       ],
+      queueOptions: {
+        durable: true,
+      },
     },
   });
 
